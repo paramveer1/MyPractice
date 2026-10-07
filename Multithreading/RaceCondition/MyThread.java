@@ -7,7 +7,7 @@ public class MyThread extends Thread {
     }
   
     public   void run(){
-        for(int i = 1;i<= 1000;i++){
+        for(int i = 1;i<= 50000;i++){
             acc.addString();
         }
        

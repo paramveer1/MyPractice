@@ -15,7 +15,8 @@ public class Launch {
        catch(InterruptedException e){
         e.printStackTrace();
        }
-       System.out.println(acc.s.length());
+       System.out.println("Overlap  = "+(acc.count-acc.race));
+      //  System.out.println(acc.p.length());
         
     }
     
