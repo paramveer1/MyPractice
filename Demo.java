@@ -1,10 +1,14 @@
 public class Demo{
     public static  void main(String  args[]){
-    //    Integer a = 225;
- int a = 0b1;
+//   int a = 100;     
+short b = 100;
+// char c = 100;
+int a = 'c';
+
+System.out.println(a);
 
 
-       System.out.println(a);
 
+ 
     }
 }

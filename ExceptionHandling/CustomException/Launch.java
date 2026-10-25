@@ -6,11 +6,16 @@ public class Launch {
         System.out.println("Enter Your Age ");
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        if(a<18)
+        if(a<18){
+
+            throw new AgeValidation("Not Eligible for Voting");
+            System.out.println(" ");
+
+        }
 
 
 
-        throw new AgeValidation("Not Eligible for Voting");
+        
         else System.out.println(" Eligible ");
     }
     
