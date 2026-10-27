@@ -3,7 +3,7 @@ package IO.Serialization;
 import java.io.Serializable;
 
 class Employee implements Serializable{
-    transient int employee_no  ;
+     int employee_no  ;
     String name;
     int salary;
 
