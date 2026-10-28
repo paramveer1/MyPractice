@@ -1,12 +1,12 @@
 package CollectionFramework.ComparatorDemo;
 
-public class Employee implements Comparable<Employee> {
+public class Employee implements Comparable<Employee>,Cloneable {
     public int compareTo(Employee e1 ){
         return e1.getId()-this.getId();
 
     }
 
-    Employee(int id,String name, byte age,int salary){
+   public Employee(int id,String name, byte age,int salary){
         this.id = id;
         this.name = name;
         this.age = age;
@@ -56,6 +56,17 @@ public class Employee implements Comparable<Employee> {
         return "Id = "+id + ",  Name ="+name+", Age = "+ age+", Salary = " + salary +" \n";
 
     }
+    // @Override
+    // public Object clone() throws CloneNotSupportedException {
+        
+    //     return super.clone();
+    // }
+
+    public Object clone() throws CloneNotSupportedException{
+        return super.clone();
+    }
+
+
 
     
 
