@@ -24,8 +24,11 @@ public class ArrayListDemo {
         
 
         }
+        itr.set(55555);
+        itr.add(7777);
+        
         while(itr.hasPrevious()){
-            itr.add(7777);
+            
            
             System.out.println(itr.previous());
 
